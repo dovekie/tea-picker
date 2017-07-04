@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tea.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tea.description %>
+</p>
+
+<p>
+  <strong>Caffeine:</strong>
+  <%= @tea.caffeine %>
+</p>
+
+<p>
+  <strong>Times chosen:</strong>
+  <%= @tea.times_chosen %>
+</p>
+
+<p>
+  <strong>Times skipped:</strong>
+  <%= @tea.times_skipped %>
+</p>
+
+<%= link_to 'Edit', edit_tea_path(@tea) %> |
+<%= link_to 'Back', teas_path %>

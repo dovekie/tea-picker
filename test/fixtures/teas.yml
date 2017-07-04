@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  caffeine: MyString
+  times_chosen: 1
+  times_skipped: 1
+
+two:
+  name: MyString
+  description: MyText
+  caffeine: MyString
+  times_chosen: 1
+  times_skipped: 1

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Teas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Caffeine</th>
+      <th>Times chosen</th>
+      <th>Times skipped</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teas.each do |tea| %>
+      <tr>
+        <td><%= tea.name %></td>
+        <td><%= tea.description %></td>
+        <td><%= tea.caffeine %></td>
+        <td><%= tea.times_chosen %></td>
+        <td><%= tea.times_skipped %></td>
+        <td><%= link_to 'Show', tea %></td>
+        <td><%= link_to 'Edit', edit_tea_path(tea) %></td>
+        <td><%= link_to 'Destroy', tea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tea', new_tea_path %>
